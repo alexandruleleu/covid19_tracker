@@ -9,4 +9,5 @@ build/
 *.bak
 *.tmp
 .vscode
+.firebase
 package-lock.json

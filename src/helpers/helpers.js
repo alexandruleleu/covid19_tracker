@@ -58,8 +58,8 @@ export const CHART_OPTIONS_LAST_MONTH = {
   data: [],
 };
 
-function formatMetadata(cases, max) {
-  return cases.slice(0, max).reduce(
+function formatMetadata(cases, min, max) {
+  return cases.slice(min, max).reduce(
     (acc, day) => {
       acc.confirmedDataPoints = [
         ...acc.confirmedDataPoints,
@@ -86,9 +86,9 @@ export async function getMetadata() {
     const casesData = await api.get(BASE_URL_METADATA, '/v1/us/daily.json');
     // todo -> compute the days number of last month
     return {
-      all_cases: formatMetadata(casesData, casesData.length),
-      seven_days_cases: formatMetadata(casesData, 7),
-      last_month_cases: formatMetadata(casesData, 31),
+      all_cases: formatMetadata(casesData, 0, casesData.length),
+      seven_days_cases: formatMetadata(casesData, 0, 7),
+      last_month_cases: formatMetadata(casesData, computeNrDays().min, computeNrDays().max),
     };
   } catch (err) {
     // eslint-disable-next-line
@@ -125,4 +125,21 @@ export const formatDate = (date) => {
   if (day.length < 2) day = '0' + day;
 
   return [year, month, day].join('-');
+};
+
+export const getDaysInMonth = (date) =>
+  new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+
+// computes the days number between current day and previous month
+export const computeNrDays = () => {
+  let finalResult = 0;
+  const currDay = new Date(),
+    year = currDay.getFullYear(),
+    month = currDay.getMonth();
+  finalResult += currDay.getDate() - 1;
+  finalResult += getDaysInMonth(new Date(year, month - 1));
+  return {
+    max: finalResult,
+    min: currDay.getDate() - 1,
+  };
 };
