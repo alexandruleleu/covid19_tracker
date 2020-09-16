@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+
 import { useParams } from 'react-router-dom';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Table from '@material-ui/core/Table';
@@ -64,6 +66,12 @@ const DetailsComponent = ({ loading, onFetchDetails, data }) => {
       </div>
     </section>
   );
+};
+
+DetailsComponent.propTypes = {
+  loading: PropTypes.bool,
+  data: PropTypes.array,
+  onFetchDetails: PropTypes.func,
 };
 
 export default DetailsComponent;

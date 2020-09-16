@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 
 import { useHistory } from 'react-router-dom';
 import FilterSection from '../../components/FilterSection';
@@ -44,6 +45,7 @@ const PlaygroundComponent = ({
     return () => {
       onUnmountPlayground();
     };
+    // eslint-disable-next-line
   }, [onFetchMetadata, onUnmountPlayground]);
 
   if (loading)
@@ -67,6 +69,16 @@ const PlaygroundComponent = ({
       )}
     </section>
   );
+};
+
+PlaygroundComponent.propTypes = {
+  loading: PropTypes.bool,
+  chartLoading: PropTypes.bool,
+  timeInterval: PropTypes.string,
+  activeOptions: PropTypes.object,
+  onFetchMetadata: PropTypes.func,
+  onUnmountPlayground: PropTypes.func,
+  onTimeIntervalChange: PropTypes.func,
 };
 
 export default PlaygroundComponent;
