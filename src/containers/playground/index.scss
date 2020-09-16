@@ -1,0 +1,35 @@
+.playground-container {
+  width: 100vw;
+  min-height: 50vh;
+
+  &--progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.filter-container {
+  .MuiInputBase-formControl {
+    width: 150px;
+  }
+}
+
+.chart-container {
+  position: relative;
+  border-radius: 8px;
+  border: solid 2px #fff;
+  margin: 0 50px;
+  min-height: 20vh;
+
+  .canvasjs-chart-canvas {
+    width: 100%;
+  }
+}
+
+.chart-loader-container {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

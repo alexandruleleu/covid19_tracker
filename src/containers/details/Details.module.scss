@@ -1,0 +1,30 @@
+.detailsContainerProgress {
+  width: 100%;
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailsContainer {
+  width: 100%;
+
+  min-height: 30vh;
+}
+
+.titleContainer {
+  padding: 0 50px;
+  margin: 40px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  h1 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.tableContainer {
+  padding: 0 50px 50px 50px;
+  border-radius: 8px;
+}

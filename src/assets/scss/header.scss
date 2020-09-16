@@ -1,0 +1,23 @@
+@import "./color.scss";
+
+.header-container {
+  border-bottom: solid 1px $med-gray-1;
+  background: $white;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+  padding: 0 50px;
+
+  &--title {
+    text-decoration: none;
+    color: #222;
+    align-items: center;
+
+    h1 {
+      font-size: 21px;
+    }
+  }
+}

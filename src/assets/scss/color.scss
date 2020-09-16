@@ -1,0 +1,116 @@
+// primary
+$blue: #049fd9;
+$river-blue: #097dbc;
+$dark-blue: #024259;
+$light-blue: #eff8fc;
+$dark-gray: #58585b;
+$dark-gray-2: #7f7f86;
+$dark-gray-3: #39393b;
+// status
+$green: #6cc04a;
+$orange: #faa000;
+$red: #cf2030;
+$light-red: #fcf4f4;
+
+// greys
+$light-gray-1: #fafafa;
+$light-gray-2: #f6f6f6;
+$light-gray-3: #e9e9e9;
+$med-gray-1: #c6c7ca;
+$med-gray-2: #9e9ea2;
+$med-gray-3: #7f7f86;
+
+// secondary
+$cyan: #00cfd2;
+$pink: #e86e97;
+$purple: #8055c9;
+$blue-silver: #8599b6;
+$light-pink: #ee99b6;
+$light-indigo: #8d9eea;
+$lime: #abc233;
+$lake-blue: #0a7dbc;
+$light-purple: #b594cd;
+$teal: #15a792;
+
+//gradients
+$blue-gradient: linear-gradient(270deg, $blue 0%, $river-blue 100%);
+
+$white: #ffffff;
+$black: #000000;
+
+$disabled-opacity: 0.5;
+
+//New colors
+
+//brand colors
+$brand-color-pale: #EFF8FC;
+$brand-color-light: #00bceb;
+$brand-color: #097dbc;
+$brand-color-dark: #091a33;
+$brand-color-hover: #076496;
+
+//status colors
+$status-color-success: #6cc04a;
+$status-color-alert: #f2690d;
+$status-color-error: #cf2030;
+$status-color-inactive: #9e9ea2;
+
+//status color variables
+$status-color-succes-light: #f7fbf5;
+$status-color-alert-light: #fef6f0;
+$status-color-error-light: #fbedee;
+$status-color-success-dark: #60ac42;
+$status-color-alert-dark: #d95e0b;
+$status-color-error-dark: #b91c2b;
+
+//grays
+$gray-light-1: #f9f9f9;
+$gray-light-2: #f2f2f2;
+$gray-light-3: #e9e9e9;
+$gray-med-1: #c6c7ca;
+$gray-med-2: #9e9ea2;
+$gray-med-3: #7f7f86;
+$gray-dark: #39393b;
+
+//chart colors
+$chart-color-1: #7c57f8;
+$chart-color-2: #5edfff;
+$chart-color-3: #d44cfc;
+$chart-color-4: #ffcb42;
+$chart-color-5: #ee6e9f;
+$chart-color-6: #52e0cd;
+
+//chart color variables
+$chart-color-7: #a09aff;
+$chart-color-8: #acddf6;
+$chart-color-9: #ed97ed;
+$chart-color-10: #ddff6f;
+$chart-color-11: #f3a5a5;
+$chart-color-12: #a7f1e7;
+$chart-color-13: #584ca9;
+$chart-color-14: #678be0;
+$chart-color-15: #a73cdd;
+$chart-color-16: #92d146;
+$chart-color-17: #e14f86;
+$chart-color-18: #5eb395;
+$chart-color-19: #ba8cda;
+$chart-color-20: #a2bff8;
+$chart-color-21: #f691b6;
+$chart-color-22: #c3f0a4;
+$chart-color-23: #fb7f62;
+$chart-color-24: #8cdea9;
+
+//miscellaneous
+
+//cloud providers
+$cloud-aws: #ff9901;
+$cloud-google: #4285f4;
+$cloud-kubernetes: #0bc1d0;
+$cloud-azure: #3bbdf0;
+$cloud-openstack: #ed1d47;
+$cloud-vmware: #717074;
+$cloud-ibm: #0362ff;
+$cloud-vcd: #7cb13e;
+
+//feature colors
+$feature-saving: #13a792;
