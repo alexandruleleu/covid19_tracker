@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
@@ -29,6 +31,13 @@ const FilterSection = ({ title, timeInterval, items, handleChange }) => {
       </div>
     </div>
   );
+};
+
+FilterSection.propTypes = {
+  title: PropTypes.string,
+  timeInterval: PropTypes.string,
+  items: PropTypes.array,
+  handleChange: PropTypes.func,
 };
 
 export default FilterSection;
